@@ -253,8 +253,6 @@ var SwaggerInfo = &swag.Spec{
 	Description:      "This is a sample API for managing recipes.",
 	InfoInstanceName: "swagger",
 	SwaggerTemplate:  docTemplate,
-	LeftDelim:        "{{",
-	RightDelim:       "}}",
 }
 
 func init() {
