@@ -32,7 +32,7 @@ import (
 // @license.name MIT
 // @license.url https://opensource.org/licenses/MIT
 
-// @host localhost:8080
+// @host http://go-kitchen-lb-1913677782.ap-northeast-1.elb.amazonaws.com
 // @BasePath /
 
 func main() {
