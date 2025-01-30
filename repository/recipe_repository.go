@@ -17,8 +17,8 @@ type Recipe struct {
 	Name         string             `bson:"name" json:"name"`
 	Ingredients  []string           `bson:"ingredients" json:"ingredients"`
 	Instructions string             `bson:"instructions" json:"instructions"`
-	CreatedAt    time.Time          `bson:"created_at" json:"created_at"`
-	UpdatedAt    time.Time          `bson:"updated_at" json:"updated_at"`
+	CreatedAt    time.Time          `bson:"created_at" json:"created_at,omitempty"`
+	UpdatedAt    time.Time          `bson:"updated_at" json:"updated_at,omitempty"`
 }
 
 type RecipeRepository interface {

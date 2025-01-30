@@ -2,6 +2,7 @@ package controllers
 
 import (
 	"GoRecipe/constants"
+	"fmt"
 	"net/http"
 
 	"GoRecipe/repository"
@@ -42,7 +43,7 @@ func NewRecipeController(repo repository.RecipeRepository) *RecipeController {
 func (rc *RecipeController) CreateRecipe(c *gin.Context) {
 	var recipe repository.Recipe
 	if err := c.ShouldBindJSON(&recipe); err != nil {
-		c.JSON(http.StatusBadRequest, ApiError{"Invalid request payload"})
+		c.JSON(http.StatusBadRequest, ApiError{fmt.Sprintf("Invalid request payload - %s", err.Error())})
 		return
 	}
 
