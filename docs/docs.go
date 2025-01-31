@@ -246,15 +246,13 @@ const docTemplate = `{
 // SwaggerInfo holds exported Swagger Info so clients can modify it
 var SwaggerInfo = &swag.Spec{
 	Version:          "1.0",
-	Host:             "http://go-kitchen-app-1954036813.ap-northeast-1.elb.amazonaws.com",
+	Host:             "go-kitchen-app-1954036813.ap-northeast-1.elb.amazonaws.com",
 	BasePath:         "/",
 	Schemes:          []string{},
 	Title:            "Go Recipe API",
 	Description:      "This is a sample API for managing recipes.",
 	InfoInstanceName: "swagger",
 	SwaggerTemplate:  docTemplate,
-	LeftDelim:        "{{",
-	RightDelim:       "}}",
 }
 
 func init() {
