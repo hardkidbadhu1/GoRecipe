@@ -22,7 +22,7 @@ definitions:
       updated_at:
         type: string
     type: object
-host: http://go-kitchen-lb-1913677782.ap-northeast-1.elb.amazonaws.com
+host: http://go-kitchen-app-1954036813.ap-northeast-1.elb.amazonaws.com
 info:
   contact:
     email: support@swagger.io
